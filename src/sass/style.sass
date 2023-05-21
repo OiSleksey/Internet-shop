@@ -1,0 +1,92 @@
+*
+    font-family: Arial, Helvetica, sans-serif
+    box-sizing: border-box
+
+html
+    font-size: 67.2%
+
+// body
+//     border-radius: 20px
+//     border: 1px solid #000000
+//     margin: 5px
+
+.authForm
+    width: 30rem
+    height: 100vh
+    margin: 0 auto
+    display: flex
+    align-items: center
+
+    & .from-block
+        background-color: #08c
+        color: #fff
+        text-align: center
+        padding: 3rem
+        border-radius: .3rem
+
+.store
+    border-radius: 2rem
+    border: 1px solid #000000
+    margin: .5rem
+
+.top-bar
+    background: #A5D8FF
+    height: 8rem
+    width: 98%
+    margin: 0 auto
+    border-radius: 2rem
+    font-weight: 600
+    outline: 1px solid #000000
+    margin-bottom: 2rem
+
+.likes, .cart
+    height: 5rem
+    margin-right: 1.5rem
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    font-size: 2rem
+    padding: 1rem
+    border-radius: 1rem
+    outline: 1px solid #000000
+
+.likes
+    // width:
+    background-color: #B2F2BB
+    & img
+        max-width: 3.5rem
+        margin-right: 1rem
+
+.cart
+    // width: 80px
+    background-color: #FFEC99
+    & img
+        max-width: 4rem
+        margin-right: 1rem
+    &__count
+        margin-right: 1rem
+    &__text, &__cost
+        font-weight: 400
+
+.product-card
+    // background-color: #B2F2BB
+    border: 1px solid black
+    // height: 100px
+    border-radius: 1.5rem
+    font-weight: 600
+    & img
+        width: 100%
+    &__btn-add
+        background-color: #A5D8FF
+        border-radius: 1rem
+        font-size: 2rem
+        width: 100%
+        &_active
+            background-color: #FFEC99
+    &__name
+        font-weight: 600
+    &__data
+        color: #006DC1
+
+.col-sm-3
+    flex: 0 0 auto

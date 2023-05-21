@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Section logIn -->
+    <section class="authForm d-none">
+      <div class="container">
+        <form action="#" class="from-block">
+          <div>
+            <label class="form-label">
+              <span>Login</span>
+              <input type="text" name="login" class="form-control" />
+            </label>
+          </div>
+          <div>
+            <label class="form-label">
+              <span>Password</span>
+              <input type="password" name="password" class="form-control" />
+            </label>
+          </div>
+          <button type="button" id="authButton" class="btn btn-warning mt-3">
+            Відправити форму
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- /Section logIn -->
+    <!--Section online store-->
+    <section class="store d-none py-3">
+      <header>
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="col-12 top-bar d-flex align-items-center justify-content-end pr-5"
+            >
+              <div class="likes">
+                <img
+                  src="https://cdn.onlinewebfonts.com/svg/img_507884.png"
+                  alt=""
+                  class="likes__img"
+                />
+                <span id="likesCount">0</span>
+              </div>
+              <div class="cart">
+                <img
+                  src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png"
+                  alt=""
+                />
+                <span id="productsCount" class="cart__count">0</span>
+                <span class="cart__text">
+                  - на
+                  <span id="productsCost" class="cart__cost"></span>
+                  грн
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="goods mb-xl-5">
+        <div class="container-fluid">
+          <div class="row justify-content-around p-3">
+            <div class="col-sm-11 col-md-6 mb-sm-5 mb-lg-0 col-lg-3">
+              <div class="product-card p-3 text-center" data-goods-id="111111">
+                <img src="img/Screenshot_1.png" alt="" />
+                <h5 class="product-card__name mb-3">Samsung ms23a7118ak/ua</h5>
+                <h4 class="product-card__data mb-4">
+                  <span class="product-card__cost">7500</span>
+                  грн
+                </h4>
+                <div class="row align-items-center px-1 p">
+                  <div class="col-10">
+                    <button class="product-card__btn-add px-3 py-1">
+                      Додати в корзину
+                    </button>
+                  </div>
+                  <div class="col-2 ps-0 product-card__like">
+                    <img
+                      src="img/like-slack.png   "
+                      alt=""
+                      class="like-slack"
+                    />
+                    <img
+                      src="img/like-active.png   "
+                      alt=""
+                      class="like-active d-none"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-11 col-md-6 mb-sm-5 mb-lg-0 col-lg-3">
+              <div class="product-card p-3 text-center" data-goods-id="222222">
+                <img src="img/Screenshot_2.png" alt="" />
+                <h5 class="product-card__name mb-3">Segway Ninebot F401</h5>
+                <h4 class="product-card__data mb-4">
+                  <span class="product-card__cost">25000</span>
+                  грн
+                </h4>
+                <div class="row align-items-center px-1 p">
+                  <div class="col-10">
+                    <button class="product-card__btn-add px-3 py-1">
+                      Додати в корзину
+                    </button>
+                  </div>
+                  <div class="col-2 ps-0 product-card__like">
+                    <img
+                      src="img/like-slack.png   "
+                      alt=""
+                      class="like-slack"
+                    />
+                    <img
+                      src="img/like-active.png   "
+                      alt=""
+                      class="like-active d-none"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-11 col-md-6 mb-sm-5 mb-lg-0 col-lg-3">
+              <div class="product-card p-3 text-center" data-goods-id="333333">
+                <img src="img/Screenshot_3.png" alt="" />
+                <h5 class="product-card__name mb-3">Samsung ms23a7118ak/ua</h5>
+                <h4 class="product-card__data mb-4">
+                  <span class="product-card__cost">7500</span>
+                  грн
+                </h4>
+                <div class="row align-items-center px-1 p">
+                  <div class="col-10">
+                    <button class="product-card__btn-add px-3 py-1">
+                      Додати в корзину
+                    </button>
+                  </div>
+                  <div class="col-2 ps-0 product-card__like">
+                    <img
+                      src="img/like-slack.png   "
+                      alt=""
+                      class="like-slack"
+                    />
+                    <img
+                      src="img/like-active.png   "
+                      alt=""
+                      class="like-active d-none"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-11 col-md-6 mb-sm-5 mb-lg-0 col-lg-3">
+              <div class="product-card p-3 text-center" data-goods-id="444444">
+                <img src="img/Screenshot_4.png" alt="" />
+                <h5 class="product-card__name mb-3">Samsung ms23a7118ak/ua</h5>
+                <h4 class="product-card__data mb-4">
+                  <span class="product-card__cost">7500</span>
+                  грн
+                </h4>
+                <div class="row align-items-center px-1 p">
+                  <div class="col-10">
+                    <button class="product-card__btn-add px-3 py-1">
+                      Додати в корзину
+                    </button>
+                  </div>
+                  <div class="col-2 ps-0 product-card__like">
+                    <img
+                      src="img/like-slack.png   "
+                      alt=""
+                      class="like-slack"
+                    />
+                    <img
+                      src="img/like-active.png   "
+                      alt=""
+                      class="like-active d-none"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!--/Section online store-->
+  </body>
+</html>
