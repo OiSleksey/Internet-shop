@@ -1,11 +1,13 @@
 let cart = [];
 const productCard = document.querySelectorAll('.product-card');
-// const productName = document.querySelectorAll('.product-card__name');
-// const productCost = document.querySelectorAll('.product-card__cost');
 const productBtnAdd = document.querySelectorAll('.product-card__btn-add');
 const productLike = document.querySelectorAll('.product-card__like');
 
 getLocaleStorage();
+
+window.addEventListener('storage', () => {
+  getLocaleStorage();
+});
 
 //Отримання данних cart із localeStorage
 function getLocaleStorage() {
@@ -13,7 +15,6 @@ function getLocaleStorage() {
   console.log(cart === null);
   if (cart === null || cart.length === 0) return (cart = []);
   updateCartCounter(cart.length);
-
   updateCartValue(cart);
   productCard.forEach(product => {
     const productId = product.dataset.goodsId;

@@ -1,11 +1,12 @@
-console.log('hello');
 let wishList = [];
 const productCard = document.querySelectorAll('.product-card');
-// const productName = document.querySelectorAll('.product-card__name');
-// const productCost = document.querySelectorAll('.product-card__cost');
 const productLike = document.querySelectorAll('.product-card__like');
 
 getLocaleStorage();
+
+window.addEventListener('storage', () => {
+  getLocaleStorage();
+});
 
 //Отримання данних cart із localeStorage
 function getLocaleStorage() {
@@ -62,7 +63,6 @@ function setWishList(product) {
 }
 
 //Оновлення статусу кнопки ("Подобається") Намагався зробити через productLike.src , але webpack знущається зі своїм contenthash)
-
 function setBtnLike(product) {
   const productLike = product.querySelector('.product-card__like');
   const slackImg = productLike.querySelector('.like-slack');

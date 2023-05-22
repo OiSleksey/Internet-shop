@@ -17,8 +17,6 @@ function authFunction() {
 
   localStorage.setItem('accessToken', '65sf465s4df6s5d4f8979w6r454fd');
   document.querySelector('.authForm').classList.add('d-none');
-
-  //   document.querySelector('.page-content').classList.remove('d-none');
   document.querySelector('.store').classList.remove('d-none');
 }
 
@@ -27,16 +25,7 @@ function start() {
     document.querySelector('.authForm').classList.remove('d-none');
     return;
   }
-
-  //   document.querySelector('.page-content').classList.remove('d-none');
   document.querySelector('.store').classList.remove('d-none');
-
-  //   if (!localStorage.getItem('cart')) {
-  //     return;
-  //   }
-
-  //   cart = JSON.parse(localStorage.getItem('cart'));
-  //   updateCartCounter(cart.length);
 }
 //Auth/
 
